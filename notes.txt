@@ -1,0 +1,4 @@
+1. Understanding of pointers - https://beginnersbook.com/2014/01/c-pointers/
+2. Understanding double pointers - https://beginnersbook.com/2014/01/c-pointer-to-pointer/
+3. Return type of malloc() function is a void pointer. So what is void pointer ? “use such a function to return a pointer to any data-type. However, you cannot dereference a void* pointer. So, to do anything useful with the return value of a function that returns a void*, you need to first cast it to some pointer type”.
+4. That is the reason we type cast malloc a pointer to structure for linked list `struct node *linkNode = (node*) malloc(sizeof(struct node));`
