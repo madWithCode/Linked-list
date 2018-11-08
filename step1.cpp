@@ -23,12 +23,13 @@ void InsertLinkedList(struct node **head, int position, int data){
     
     // std::cout << head->data << std::endl;
     if(position == 1){
+        linkNode->next = *head;
         *head = linkNode;
     }else{
         curr_node = *head;
         while(counter < position-1 && curr_node-> next != NULL){
             curr_node = curr_node-> next;
-            position++;
+            counter++;
         }
         linkNode->next =  curr_node->next;
         curr_node->next = linkNode;
